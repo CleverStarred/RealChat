@@ -1,0 +1,58 @@
+.button {
+  background: $blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+
+.login-button {
+  @extend .button;
+  background: $github-color;
+}
+
+.button--leave-room {
+  @extend .button;
+  background: none;
+  color: #FFC107;
+  border: 1px solid darken(#FFC107, 0.5);
+  border-radius: 0.3;
+  transition: background .3s linear, color .3s linear;
+  &:hover {
+    background: #FFC107;
+    color: black;
+  }
+}
+
+.button--join {
+  @extend .button;
+  background: #2ecc71;
+  margin-left: $s-size;
+}
+
+.button--link {
+  background: none;
+}
+
+.button--secondary {
+  background: #888;
+}
+
+
+.button--unread-messages {
+  border-radius:50%;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  background: #B2EBF2;
+  color: #263238;
+  font-weight: 700;
+  border: none;
+}

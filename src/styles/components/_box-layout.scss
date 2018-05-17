@@ -1,0 +1,53 @@
+.box-layout {
+  align-items: center;
+  background: url('/images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  display: flex;
+}
+
+.box-layout--join {
+  @extend .box-layout;
+  height: initial;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  flex-grow: 1;  
+  overflow: hidden;
+}
+
+.box-layout--messages {
+  @extend .box-layout--join;
+  justify-content: flex-start;
+  align-items: flex-start;
+  // flex-grow: 0;
+}
+
+
+.box-layout__box {
+  background: fade-out(white, .15);
+  border-radius: 3px;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 25rem;
+  // display: inline-block;
+  position: relative;
+}
+
+.box-layout__box--join {
+  @extend .box-layout__box;
+  margin-bottom: $xl-size;
+  width: 40rem;
+  
+}
+
+.box-layout__title {
+  margin: 0 0 $m-size 0;
+  line-height: 1;
+}

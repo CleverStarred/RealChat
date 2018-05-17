@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.container__left {
+  height: 95vh;
+  width: 20vw;
+  background: linear-gradient(to right, $github-color,#2c3e50);
+  border-right: 1px solid fade-out(white, .8);;
+  padding: 0 0 $l-size $l-size;
+  float: left;  
+  // position: relative;
+}
+
+.container__left__text {
+  height: 100%;
+  // display: flex;
+  // flex-direction: column-reverse;
+  overflow: auto;
+  // justify-content: flex-start;
+  // align-items: flex-start;
+}
+
+.room-name {
+  text-decoration: none;
+  color: $off-white;
+  font-weight: 300;
+  font-size: $font-size-large;
+  padding: $m-size $l-size;
+  
+}
+
+.room-name-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid fade-out(white, .8);  
+  &:hover {
+    background: fade-out(white, 0.8);
+  }
+}
+
+.room-selected {
+  div {
+    text-decoration: none;
+    color: #FFC107;
+    font-weight: 300;
+    font-size: $font-size-large;
+    padding: $m-size $l-size;
+  }
+}
+
